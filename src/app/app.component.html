@@ -9,4 +9,15 @@
   }
 }
 
-<app-star [stars]="3.5"></app-star>
+<app-star [stars]="5"></app-star>
+
+<app-product-card-component [productData]="{
+  image: 'https://cdn-icons-png.flaticon.com/512/1554/1554591.png',
+  name: 'Nombre del Producto',
+  price: 99.99,
+  description: 'Descripción del Producto',
+  quality: 4.5,
+  quality_price_ratio: 3.75,
+  durability: 4
+}">
+</app-product-card-component>

@@ -1,0 +1,14 @@
+<div class="card" style="width: 18rem;">
+    <img src="{{productData.image}}" class="card-img-top" alt="...">
+    <div class="card-body">
+      <h5 class="card-title">{{productData.name}}</h5>
+      <p class="card-text">{{productData.description}}</p>
+    </div>
+    <ul class="list-group list-group-flush">
+      <li class="list-group-item">Precio: {{productData.price}}</li>
+      <li class="list-group-item">Calidad: <app-star [stars]="productData.quality"></app-star></li>
+      <li class="list-group-item">Relacion calidad precio: <app-star [stars]="productData.quality_price_ratio"></app-star> </li>
+      <li class="list-group-item">Durabilidad: <app-star [stars]="productData.durability"></app-star> </li>
+    </ul>
+    
+  </div>

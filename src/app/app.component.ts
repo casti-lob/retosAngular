@@ -2,10 +2,11 @@ import { Component } from '@angular/core';
 import { CommonModule } from '@angular/common';
 import { RouterOutlet } from '@angular/router';
 import { StarComponent } from './star/star.component';
+import { ProductCardComponentComponent } from './product-card-component/product-card-component.component';
 @Component({
   selector: 'app-root',
   standalone: true,
-  imports: [CommonModule, RouterOutlet, StarComponent],
+  imports: [CommonModule, RouterOutlet, StarComponent, ProductCardComponentComponent],
   templateUrl: './app.component.html',
   styleUrl: './app.component.css'
 })
